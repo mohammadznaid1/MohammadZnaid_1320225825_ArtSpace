@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7F0"
+    tools:context=".ArtworkDetailsActivity">
+
+    <TextView
+        android:id="@+id/detailsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Artwork Details"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#33251E"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/detailsCard"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:background="#F2D8C8"
+        app:layout_constraintTop_toBottomOf="@id/detailsHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/detailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Artwork Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#33251E" />
+
+        <TextView
+            android:id="@+id/detailsArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="Artist"
+            android:textSize="19sp"
+            android:textColor="#66554A" />
+
+        <TextView
+            android:id="@+id/detailsYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Year"
+            android:textSize="19sp"
+            android:textColor="#66554A" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/visitWebsiteButton"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Visit Website"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#795548"
+        app:layout_constraintTop_toBottomOf="@id/detailsCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#795548"
+        app:layout_constraintTop_toBottomOf="@id/visitWebsiteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

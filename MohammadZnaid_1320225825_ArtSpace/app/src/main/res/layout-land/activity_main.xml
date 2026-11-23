@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF7F0">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/artworkCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 / 6"
+                android:textSize="20sp"
+                android:textColor="#33251E"
+                android:layout_marginBottom="12dp" />
+
+            <ImageView
+                android:id="@+id/artworkImage"
+                android:layout_width="220dp"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/art1"
+                android:contentDescription="Artwork image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:id="@+id/artworkInfoCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="18dp"
+                android:background="#F2D8C8">
+
+                <TextView
+                    android:id="@+id/artworkTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artwork Title"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:textColor="#33251E"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/artworkArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Artist (Year)"
+                    android:textSize="16sp"
+                    android:textColor="#66554A"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/previousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Previous"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#795548" />
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#795548" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
